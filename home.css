@@ -1,0 +1,225 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+:root {
+  --mainColor: #6ca2f7;
+}
+h1 {
+  color: var(--mainColor);
+  text-decoration: none;
+}
+
+h1:hover {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--mainColor);
+}
+/* css hover effect */
+/* 
+a {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent 5px
+     );
+    background-repeat: repeat-x;
+    background-size: 100%;
+  color: #000;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent
+     );
+} */
+
+
+
+@supports not(-webkit-text-stroke: 2px green) {
+  h1:hover {
+    text-shadow:
+      3px 3px 0 var(--mainColor),
+      -1px -1px 0 var(--mainColor),
+      1px -1px 0 var(--mainColor),
+      -1px 1px 0 var(--mainColor),
+      1px 1px 0 var(--mainColor);
+  }
+}
+.heading{
+  float: right;
+  padding: 1%;
+}
+h1{
+  font-weight: 800;
+  color:white;
+  border-block-color: white;
+  font-size: -webkit-xxx-large;
+  margin-bottom: -5%;
+}
+.title{
+  text-align: center;
+}
+.box{
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: -webkit-fill-available;
+  background-image: url("images/landscape.jpg");
+  background-size:  110%;
+  background-repeat: no-repeat;
+
+}
+@keyframes animate{
+  from{
+      background-position: 0 0;
+  }
+  to{
+      background-position: 100% 0;
+  }
+}
+
+.btn{
+  background: transparent;
+  border-color: transparent;
+  padding: 79px 94px;
+  display: -webkit-inline-box;
+  margin-left: 75%;
+
+  background-image: url("images/200.webp");
+}
+
+.btn:hover{
+  /* background: transparent;
+  border-color: transparent;
+  background-image: url("images/200.webp");
+  background-size: contain;
+  background-repeat: no-repeat;    */
+}
+
+.btn1:hover{
+ 
+}
+.icon{
+float: right;
+}
+button:focus {
+  outline:0;
+}
+
+.box1{
+  width: 100%;
+  height: -webkit-fill-available;
+  background-image: url("images/landscape.jpg");
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  }
+  .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  
+  }
+/* .swiper-container.swiper-container-coverflow.swiper-container-3d.swiper-container-initialized.swiper-container-horizontal{
+  width: 500px;
+  height: 500px;
+}
+img{
+  height: 300px;
+  width: 300px;
+} */
+
+.card {
+  /* margin: 10%; */
+  position: relative;
+  background:;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.card .img-box{
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+
+}
+.card:hover .img-box{
+opacity: 0.5;
+}
+.card .img-box img{
+  width: 100%;
+}
+.card .content{
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  bottom: -100%;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.5s;
+}
+.card:hover .content{
+  bottom: -30%;
+}
+.card:nth-child(1) .content {
+  background: linear-gradient(0deg, #c21833,transparent);
+}
+.card:nth-child(2) .content {
+  background: linear-gradient(0deg, blue,transparent);
+}
+.card:nth-child(3) .content {
+  background: linear-gradient(0deg, #c21833,transparent);
+}
+.card .content h2{
+  margin: 25px 0 10px 0;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+}
+.card .content h2 span {
+ color: #ffeb3b;
+ font-size: 16px;
+}
+.card .content a{
+margin: 0 0 0 0;
+padding: 0;
+color:;
+font-size: large;
+font-weight: 500;
+transition: transform .5s;
+
+}
+/* .card .content a:hover{
+  transform: scale(2.1); 
+
+} */
+.profilecards{
+  margin-top: 14%;
+}
+
+/* box2 */
+.newsection{
+  height: 100%;
+}
+.imagepart{
+  background-color: #6ca2f7;
+}
+.contentpart{
+  background-color: dimgray;
+}
